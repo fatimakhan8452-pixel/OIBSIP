@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1f2937, #111827);
+}
+
+.calculator {
+    width: 100%;
+    max-width: 360px;
+    padding: 20px;
+    border-radius: 24px;
+    background: #1f2937;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+}
+
+.calculator-display {
+    min-height: 110px;
+    margin-bottom: 18px;
+    padding: 18px;
+    border-radius: 16px;
+    background: #111827;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.expression {
+    width: 100%;
+    min-height: 24px;
+    text-align: right;
+    font-size: 16px;
+    color: #9ca3af;
+    margin-bottom: 6px;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.display {
+    width: 100%;
+    text-align: right;
+    font-size: 38px;
+    font-weight: bold;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.calculator-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    min-height: 65px;
+    border: none;
+    border-radius: 14px;
+    font-size: 22px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.1s ease, opacity 0.1s ease;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.number-btn {
+    background: #374151;
+    color: white;
+}
+
+.function-btn {
+    background: #6b7280;
+    color: white;
+}
+
+.operator-btn {
+    background: #f59e0b;
+    color: white;
+}
+
+.equals-btn {
+    grid-row: span 2;
+    background: #10b981;
+    color: white;
+}
+
+.zero-btn {
+    grid-column: span 2;
+}
+
+@media (max-width: 400px) {
+    .calculator {
+        padding: 15px;
+    }
+
+    button {
+        min-height: 58px;
+        font-size: 20px;
+    }
+
+    .display {
+        font-size: 32px;
+    }
+}
