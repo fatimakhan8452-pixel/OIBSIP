@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | SecureAuth</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="dashboard-container">
+
+        <header class="dashboard-header">
+
+            <div>
+                <p class="eyebrow">SECURE DASHBOARD</p>
+
+                <h1>Welcome, <span id="userName">User</span>!</h1>
+
+                <p class="dashboard-subtitle">
+                    You have successfully logged in to your account.
+                </p>
+            </div>
+
+            <button
+                id="logoutButton"
+                class="logout-btn"
+                type="button"
+            >
+                Logout
+            </button>
+
+        </header>
+
+
+        <section class="dashboard-card">
+
+            <div class="dashboard-icon">
+                ✓
+            </div>
+
+            <h2>Authentication Successful</h2>
+
+            <p>
+                This is a protected dashboard. Only authenticated
+                users should be able to access this page.
+            </p>
+
+        </section>
+
+
+        <section class="account-card">
+
+            <h2>Account Information</h2>
+
+            <div class="account-info">
+
+                <div class="info-row">
+                    <span>Username</span>
+                    <strong id="dashboardUsername">—</strong>
+                </div>
+
+                <div class="info-row">
+                    <span>Email</span>
+                    <strong id="dashboardEmail">—</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <footer class="dashboard-footer">
+
+            <p>
+                SecureAuth Authentication System
+            </p>
+
+            <p>
+                Internship Project — Oasis Infobyte
+            </p>
+
+        </footer>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

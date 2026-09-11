@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login | SecureAuth</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="auth-container">
+
+        <section class="auth-card">
+
+            <div class="auth-header">
+                <div class="logo">SA</div>
+
+                <p class="eyebrow">WELCOME BACK</p>
+
+                <h1>Sign In</h1>
+
+                <p>
+                    Sign in to access your secure dashboard.
+                </p>
+            </div>
+
+
+            <form id="loginForm" class="auth-form">
+
+                <div class="form-group">
+
+                    <label for="loginIdentifier">
+                        Username or Email
+                    </label>
+
+                    <input
+                        type="text"
+                        id="loginIdentifier"
+                        name="loginIdentifier"
+                        placeholder="Enter username or email"
+                        autocomplete="username"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="loginPassword">
+                        Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="loginPassword"
+                        name="loginPassword"
+                        placeholder="Enter your password"
+                        autocomplete="current-password"
+                        required
+                    >
+
+                </div>
+
+
+                <p
+                    id="loginMessage"
+                    class="form-message"
+                    role="alert"
+                    aria-live="polite"
+                ></p>
+
+
+                <button
+                    type="submit"
+                    class="primary-btn"
+                >
+                    Login
+                </button>
+
+            </form>
+
+
+            <div class="auth-footer">
+
+                <p>
+                    Don't have an account?
+                    <a href="register.html">Create an account</a>
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
